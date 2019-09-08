@@ -21,6 +21,6 @@ if (!matre.test(url)){
         }
     }
     var s1 = document.getElementById("mw-content-text").innerHTML;
-    var re1 = new RegExp("<(p|dd|li)>.*?User:(" + users_name +")[\\s\\S]*?</(p|dd|li)>", "igm");
+    var re1 = new RegExp("<(p|dd|li|ul)>.*?User:(" + users_name +")[\\s\\S]*?</(p|dd|li|ul)>", "igm");
     s1 = document.getElementById("mw-content-text").innerHTML = s1.replace(re1, "<small><div>[已删除一段留言]</div></small>");
 }
